@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: mc_server
-# Recipe:: default
+# Recipe:: firewall
 #
 # Copyright 2016, YOUR_COMPANY_NAME
 #
