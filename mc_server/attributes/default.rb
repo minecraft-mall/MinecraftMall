@@ -32,3 +32,15 @@ default['mc_server']['settings']['eula'] = 'eula.txt'
 default['mc_server']['settings']['properties'] = 'server.properties'
 default['mc_server']['settings']['tem_properties'] = 'server.properties'
 default['mc_server']['settings']['par_properties'] = {}
+
+default['mc_server']['makeTask']['name'] = 'StartMinecraftServer'
+default['mc_server']['makeTask']['output'] = 'SMS.xml'
+default['mc_server']['makeTask']['template'] = node['mc_server']['makeTask']['output']
+default['mc_server']['makeTask']['dir'] = node['mc_server']['root']['wk_dir']
+default['mc_server']['makeTask']['param']['java'] = "#{node['mc_server']['jre']['INSTALLDIR']}\\bin\\java.exe"
+default['mc_server']['makeTask']['param']['Xmx'] = 4096
+default['mc_server']['makeTask']['param']['Xms'] = 2048
+default['mc_server']['makeTask']['param']['jar'] = "universal.jar"
+default['mc_server']['makeTask']['param']['dir'] = node['mc_server']['root']['dir']
+
+default['mc_server']['start']['name'] = node['mc_server']['makeTask']['name']
