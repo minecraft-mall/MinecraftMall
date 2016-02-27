@@ -12,6 +12,6 @@ data = node[cookbook_name][recipe_name]
 powershell_script "install_forge_minecraft_server" do
   cwd data['dir']
   code <<-EOS
-    "#{data['java']} -jar .\\#{data['jar']} nogui --installServer
+    "#{data['java']}" -jar .\\#{data['jar']} nogui --installServer
   EOS
 end
