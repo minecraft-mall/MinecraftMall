@@ -16,7 +16,7 @@ end
 powershell_script "regist_Task" do
   cwd data['dir']
   code <<-EOS
-    $str = Get-Content .\\#{data['output']}
+    $str = Get-Content .\\#{data['output']} | Out-String
     Register-ScheduledTask -Xml $str -TaskName "#{data['name']}"
   EOS
 end
