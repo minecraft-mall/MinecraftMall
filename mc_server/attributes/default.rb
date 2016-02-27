@@ -24,4 +24,6 @@ default['mc_server']['download']['files']['universal.jar'] = 'http://files.minec
 default['mc_server']['download']['dir'] = node['mc_server']['root']['dir']
 
 default['mc_server']['install']['dir'] = node['mc_server']['root']['dir']
-default['mc_server']['install']['jar'] = ''
+default['mc_server']['install']['jar'] = 'installer.jar'
+default['mc_server']['install']['java'] = "#{node['mc_server']['jre']['INSTALLDIR']}\\bin\\java.exe"
+
