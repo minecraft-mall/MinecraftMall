@@ -9,7 +9,7 @@
 
 data = node[cookbook_name][recipe_name]
 
-template "{data['dir']}\\#{data['output']}" do
+template "#{data['dir']}\\#{data['output']}" do
   source data['template']
 end
 
