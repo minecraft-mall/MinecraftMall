@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><% data = node['mc_server']['makeTask']['param'] %>
+<?xml version="1.0" encoding="UTF-16"?><% data = node['mc_server']['makeTask']['param'] %>
 <Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
   <RegistrationInfo>
     <Date>2016-02-27T16:22:27.4383267</Date>
