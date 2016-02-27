@@ -27,3 +27,8 @@ default['mc_server']['install']['dir'] = node['mc_server']['root']['dir']
 default['mc_server']['install']['jar'] = 'installer.jar'
 default['mc_server']['install']['java'] = "#{node['mc_server']['jre']['INSTALLDIR']}\\bin\\java.exe"
 
+default['mc_server']['settings']['dir'] = node['mc_server']['root']['dir']
+default['mc_server']['settings']['eula'] = 'eula.txt'
+default['mc_server']['settings']['properties'] = 'server.properties'
+default['mc_server']['settings']['tem_properties'] = 'server.properties'
+default['mc_server']['settings']['par_properties'] = {}
