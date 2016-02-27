@@ -14,4 +14,5 @@ powershell_script "install_forge_minecraft_server" do
   code <<-EOS
     #{data['java']} -jar .\\#{data['jar']} nogui --installServer
   EOS
+  returns [0, 1]
 end
