@@ -43,6 +43,11 @@ default['mc_server']['makeTask']['param']['Xms'] = 2048
 default['mc_server']['makeTask']['param']['jar'] = "universal.jar"
 default['mc_server']['makeTask']['param']['dir'] = node['mc_server']['root']['dir']
 
+default['mc_server']['mcrcon']['wk_dir'] = node['mc_server']['root']['wk_dir']
+default['mc_server']['mcrcon']['file'] = 'mcrcon.exe'
+default['mc_server']['mcrcon']['paths']['x86'] = 'C:\Windows\SysWOW64'
+default['mc_server']['mcrcon']['paths']['x64'] = 'C:\Windows\System32'  
+
 default['mc_server']['start']['name'] = node['mc_server']['makeTask']['name']
 
 default['mc_server']['DynamicWebBaseMap']['file'] = 'Dynmap-HEAD-forge-1.8.9.jar'

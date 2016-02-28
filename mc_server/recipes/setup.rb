@@ -15,3 +15,14 @@ include_recipe "#{cookbook_name}::settings"
 include_recipe "#{cookbook_name}::makeTask"
 include_recipe "#{cookbook_name}::DynamicWebBaseMap"
 include_recipe "#{cookbook_name}::start"
+
+ruby_block "sleep" download
+  block do
+    3.times do |i|
+      sleep 60
+      Chef::Log::debug ((i + 1) * 60).to_s
+    end
+  end
+end
+
+include_recipe "#{cookbook_name}::mcrcon"
