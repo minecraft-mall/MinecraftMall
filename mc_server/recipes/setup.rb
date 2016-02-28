@@ -17,7 +17,7 @@ include_recipe "#{cookbook_name}::DynamicWebBaseMap"
 include_recipe "#{cookbook_name}::mcrcon"
 include_recipe "#{cookbook_name}::start"
 
-ruby_block "sleep" download
+ruby_block "sleep" do
   block do
     4.times do |i|
       sleep 60
@@ -28,7 +28,7 @@ end
 
 include_recipe "#{cookbook_name}::fullrender"
 
-ruby_block "sleep" download
+ruby_block "sleep" do
   block do
     4.times do |i|
       sleep 60
