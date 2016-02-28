@@ -19,7 +19,7 @@ include_recipe "#{cookbook_name}::start"
 
 ruby_block "sleep" do
   block do
-    4.times do |i|
+    2.times do |i|
       sleep 60
       Chef::Log::debug ((i + 1) * 60).to_s
     end
