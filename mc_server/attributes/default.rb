@@ -55,3 +55,5 @@ default['mc_server']['DynamicWebBaseMap']['source'] = 'http://dynmap.us/builds/D
 default['mc_server']['DynamicWebBaseMap']['dir'] = "#{node['mc_server']['root']['dir']}\\mods"
 default['mc_server']['DynamicWebBaseMap']['port'] = 8123
 default['mc_server']['DynamicWebBaseMap']['name'] = 'DynamicWebBaseMap'
+
+default['mc_server']['fullrender']['password'] = node['mc_server']['settings']['par_properties']['rcon.password']
