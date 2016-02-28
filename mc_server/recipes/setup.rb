@@ -14,6 +14,7 @@ include_recipe "#{cookbook_name}::install"
 include_recipe "#{cookbook_name}::settings"
 include_recipe "#{cookbook_name}::makeTask"
 include_recipe "#{cookbook_name}::DynamicWebBaseMap"
+include_recipe "#{cookbook_name}::mcrcon"
 include_recipe "#{cookbook_name}::start"
 
 ruby_block "sleep" download
@@ -25,4 +26,4 @@ ruby_block "sleep" download
   end
 end
 
-include_recipe "#{cookbook_name}::mcrcon"
+include_recipe "#{cookbook_name}::fullrender"

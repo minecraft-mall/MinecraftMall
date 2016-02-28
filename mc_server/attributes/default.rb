@@ -31,7 +31,7 @@ default['mc_server']['settings']['dir'] = node['mc_server']['root']['dir']
 default['mc_server']['settings']['eula'] = 'eula.txt'
 default['mc_server']['settings']['properties'] = 'server.properties'
 default['mc_server']['settings']['tem_properties'] = 'server.properties'
-default['mc_server']['settings']['par_properties'] = {}
+default['mc_server']['settings']['par_properties']['rcon.password'] = 'ILoveDevOps'
 
 default['mc_server']['makeTask']['name'] = 'StartMinecraftServer'
 default['mc_server']['makeTask']['output'] = 'SMS.xml'
