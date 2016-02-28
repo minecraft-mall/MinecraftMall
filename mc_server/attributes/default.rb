@@ -44,3 +44,9 @@ default['mc_server']['makeTask']['param']['jar'] = "universal.jar"
 default['mc_server']['makeTask']['param']['dir'] = node['mc_server']['root']['dir']
 
 default['mc_server']['start']['name'] = node['mc_server']['makeTask']['name']
+
+default['mc_server']['DynamicWebBaseMap']['file'] = 'Dynmap-HEAD-forge-1.8.9.jar'
+default['mc_server']['DynamicWebBaseMap']['source'] = 'http://dynmap.us/builds/DynmapForge/Dynmap-HEAD-forge-1.8.9.jar'
+default['mc_server']['DynamicWebBaseMap']['dir'] = "#{node['mc_server']['root']['dir']}\\mods"
+default['mc_server']['DynamicWebBaseMap']['port'] = 8123
+default['mc_server']['DynamicWebBaseMap']['name'] = 'DynamicWebBaseMap'
