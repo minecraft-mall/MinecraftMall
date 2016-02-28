@@ -13,4 +13,5 @@ execute 'fullrender' do
   command <<-EOS
     mcrcon -H 127.0.0.1 -p "#{data['password']}" "/dynmap fullrender world"
   EOS
+  returns [0, 1]
 end
