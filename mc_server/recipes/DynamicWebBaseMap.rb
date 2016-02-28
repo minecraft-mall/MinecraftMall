@@ -9,6 +9,10 @@
 
 data = node[cookbook_name][recipe_name]
 
+directory data['dir'] do
+  recursive true
+end  
+
 remote_file "#{data['dir']}\\#{data['file']}" do
   source data['source']
 end
