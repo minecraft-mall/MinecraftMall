@@ -1,0 +1,2 @@
+# MinecraftMall
+先日福岡で行われたDevOpsハッカソンで作成した、Minecraft Forgeを適用したサーバーを構築するcookbook
