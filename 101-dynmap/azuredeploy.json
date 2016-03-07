@@ -327,7 +327,7 @@
             "typeHandlerVersion": "1.4",
             "settings": {
               "fileUris": [
-                "https://raw.githubusercontent.com/sinofseven/MinecraftMall/master/101-dynmap/owner.ps1"
+                "https://raw.githubusercontent.com/minecraft-mall/MinecraftMall/master/powershell/owner.ps1"
               ],
               "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -file owner.ps1 ',variables('PSScriptArgument'))]"
             }
