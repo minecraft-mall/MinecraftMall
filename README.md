@@ -22,9 +22,9 @@ Chef Guy の Cookbookは、<a href="cookbook/mc_server/">こちら</a>ですよ
  - @nori790822  
  - @sinofseven  
  - @yukiusagi2052  
- 
-  発表資料 ( https://doc.co/KVRtEZ )  
-  
+
+発表資料 ( https://doc.co/KVRtEZ )  
+
 ### 関連情報
 DevOpsハッカソン ( http://devopsjp.connpass.com/event/24266/ )  
 Facebook Microsoft Japan DevOps Community ( https://www.facebook.com/devopsjp/ )  

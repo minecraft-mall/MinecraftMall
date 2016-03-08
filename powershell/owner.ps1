@@ -8,7 +8,7 @@ $cli = New-Object System.Net.WebClient
 $cli.DownloadFile($uri, (Join-Path $m_home $file))
 
 
-$url = 'https://raw.githubusercontent.com/sinofseven/MinecraftMall/master/101-dynmap/builder.zip'
+$url = 'https://raw.githubusercontent.com/minecraft-mall/MinecraftMall/master/101-dynmap/builder.zip'
 $uri = New-Object System.Uri($url)
 $file = Split-Path $uri.AbsolutePath -Leaf
 $cli = New-Object System.Net.WebClient
