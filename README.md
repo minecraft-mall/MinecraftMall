@@ -1,6 +1,6 @@
 <img src="misc/logo.png"/>
 
-Minecraft Server with Forge and Dynamp Mad. 
+Minecraft Server with Forge and Dynamp Mad. <br/>
 Azure ARM template with powershell and chef-solo.
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fminecraft-mall%2FMinecraftMall%2Fmaster%2F101-dynmap%2Fazuredeploy.json" target="_blank">
