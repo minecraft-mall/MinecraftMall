@@ -1,7 +1,19 @@
 <img src="misc/logo.png"/>
 
+Minecraft Server with Forge and Dynamp Mad. <br/>
+Azure ARM template with powershell and chef-solo.
+
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fminecraft-mall%2FMinecraftMall%2Fmaster%2F101-dynmap%2Fazuredeploy.json" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fminecraft-mall%2FMinecraftMall%2Fmaster%2F101-dynmap%2Fazuredeploy.json" target="_blank">
+    <img src="http://armviz.io/visualizebutton.png"/>
+</a>
+
 先日福岡で行われたDevOpsハッカソンで、MinecraftMallチームが作成した  
 Minecraftサーバーを構築するテンプレートです。  
+
+
 
 
 ### テンプレート
