@@ -66,3 +66,7 @@ e.g.
 License and Authors
 -------------------
 Authors: TODO: List authors
+
+<a href="http://minecraft-mall.github.io/index.html">
+  <img src="https://ga-beacon.appspot.com/UA-75159043-1/minecraft-mall.github.io/index.html?pixel"/>
+</a>

@@ -38,3 +38,7 @@ Webブラウザーでマップを見ることができます
   - Minecraftマルチサーバー
   - リモートデスクトップ
   - Dynmap http://サーバー名:8123/
+
+<a href="http://minecraft-mall.github.io/index.html">
+  <img src="https://ga-beacon.appspot.com/UA-75159043-1/minecraft-mall.github.io/index.html?pixel"/>
+</a>

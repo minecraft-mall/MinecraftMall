@@ -41,3 +41,7 @@ Chef Guy の Cookbookは、<a href="cookbook/mc_server/">こちら</a>ですよ
 DevOpsハッカソン ( http://devopsjp.connpass.com/event/24266/ )  
 Facebook Microsoft Japan DevOps Community ( https://www.facebook.com/devopsjp/ )  
 Twitter ハッシュタグ #DevOpsJP ( https://twitter.com/search?q=%23devopsjp )  
+
+<a href="http://minecraft-mall.github.io/index.html">
+  <img src="https://ga-beacon.appspot.com/UA-75159043-1/minecraft-mall.github.io/index.html?pixel"/>
+</a>
