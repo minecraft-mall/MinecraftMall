@@ -66,3 +66,7 @@ e.g.
 License and Authors
 -------------------
 Authors: TODO: List authors
+
+<a href="https://github.com/minecraft-mall/MinecraftMall/tree/master/cookbook/mc_server/">
+  <img src="https://ga-beacon.appspot.com/UA-75159043-1/github.com/minecraft-mall/MinecraftMall/tree/master/cookbook/mc_server/?pixel"/>
+</a>
