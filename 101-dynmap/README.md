@@ -40,5 +40,5 @@ Webブラウザーでマップを見ることができます
   - Dynmap http://サーバー名:8123/
 
 <a href="https://github.com/minecraft-mall/MinecraftMall/tree/master/101-dynmap/">
-  <img src="https://ga-beacon.appspot.com/UA-75159043-1/https://github.com/minecraft-mall/MinecraftMall/tree/master/101-dynmap/?pixel"/>
+  <img src="https://ga-beacon.appspot.com/UA-75159043-1/github.com/minecraft-mall/MinecraftMall/tree/master/101-dynmap/?pixel"/>
 </a>
