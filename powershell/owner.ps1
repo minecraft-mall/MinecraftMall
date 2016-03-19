@@ -27,7 +27,7 @@ Configuration OpenMall
     {
         Archive UnZip
         {
-            Path = "{0}\builder.zip" -f $m_home
+            Path = "{0}\master.zip" -f $m_home
             Destination = "C:\"
             Ensure = "Present"
         }
@@ -36,6 +36,6 @@ Configuration OpenMall
 OpenMall -OutputPath .
 Start-DscConfiguration .\OpenMall -Wait -Verbose
 
-# "$m_home\builder.zip" is extracted to "C:\builder-master\"
+# "$m_home\master.zip" is extracted to "C:\builder-master\"
 
 chef-solo -c C:\builder-master\solo.rb -o mc_server::setup -l debug -L chef.log
