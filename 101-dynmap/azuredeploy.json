@@ -46,7 +46,7 @@
 
   "variables": {
     "MinecraftMallBranch": "dev",
-    "kick-chef-Argument": "-GithubBaseUrl 'https://github.com/minecraft-mall/' -ProjectName 'builder' -BranchName 'master'",
+    "kick-chef-Argument": "-GithubBaseUrl https://github.com/minecraft-mall/ -ProjectName builder -BranchName master",
     "windowsOSVersion": "2012-R2-Datacenter",
     "imagePublisher": "MicrosoftWindowsServer",
     "imageOffer": "WindowsServer",
