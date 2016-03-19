@@ -8,7 +8,7 @@ $cli = New-Object System.Net.WebClient
 $cli.DownloadFile($uri, (Join-Path $m_home $file))
 
 
-$url = 'https://github.com/minecraft-mall/builder/archive/builder-master.zip'
+$url = 'https://github.com/minecraft-mall/builder/archive/master.zip'
 $uri = New-Object System.Uri($url)
 $file = Split-Path $uri.AbsolutePath -Leaf
 $cli = New-Object System.Net.WebClient
