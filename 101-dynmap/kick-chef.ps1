@@ -4,10 +4,12 @@
     [String] $BranchName
 )
 
-
-
 $m_home = 'C:\mall'
 mkdir C:\mall
+
+$GithubBaseUrl | Set-Content C:\mall\GithubBaseUrl.txt
+$ProjectName | Set-Content C:\mall\ProjectName.txt
+$BranchName | Set-Content C:\mall\BranchName.txt
 
 $url = 'https://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.7.2-1-x86.msi'
 $uri = New-Object System.Uri($url)
