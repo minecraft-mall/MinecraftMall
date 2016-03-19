@@ -330,7 +330,7 @@
               "fileUris": [
                 "[concat('https://raw.githubusercontent.com/minecraft-mall/MinecraftMall/', variables('MinecraftMallBranch'), '/101-dynmap/kick-chef.ps1')]"
               ],
-              "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -file kick-chef.ps1 ',variables('kick-chef-Argument'))]"
+              "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -file kick-chef.ps1 ', variables('kick-chef-Argument'))]"
             }
           }
         }
