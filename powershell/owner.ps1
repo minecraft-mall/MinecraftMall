@@ -8,7 +8,7 @@ $cli = New-Object System.Net.WebClient
 $cli.DownloadFile($uri, (Join-Path $m_home $file))
 
 
-$url = 'https://github.com/minecraft-mall/builder/archive/builder-master.zip'
+$url = 'https://github.com/minecraft-mall/builder/archive/master.zip'
 $uri = New-Object System.Uri($url)
 $file = Split-Path $uri.AbsolutePath -Leaf
 $cli = New-Object System.Net.WebClient
@@ -27,7 +27,7 @@ Configuration OpenMall
     {
         Archive UnZip
         {
-            Path = "{0}\builder-master.zip" -f $m_home
+            Path = "{0}\builder.zip" -f $m_home
             Destination = "C:\"
             Ensure = "Present"
         }
@@ -35,5 +35,7 @@ Configuration OpenMall
 }
 OpenMall -OutputPath .
 Start-DscConfiguration .\OpenMall -Wait -Verbose
+
+# "$m_home\builder.zip" is extracted to "C:\builder-master\"
 
 chef-solo -c C:\builder-master\solo.rb -o mc_server::setup -l debug -L chef.log
