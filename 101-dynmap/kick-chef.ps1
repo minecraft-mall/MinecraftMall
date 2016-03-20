@@ -4,43 +4,29 @@
     [String] $BranchName
 )
 
-# variables
-$m_home = 'C:\mall'
+[String] $WorkDir = Split-Path $MyInvocation.MyCommand.Path -Parent
+[String] $MyScriptName = Split-Path $MyInvocation.MyCommand.Path -Leaf
 
 function write-log
 {
     param( [string] $message )
-    $message | Out-File -filepath ("{0}\kick-chef.log" -f $m_home) -Append
+    $message | Out-File -filepath ("{0}\{1}.log" -f $WorkDir, $MyScriptName) -Append
+    Write-Output "`n" | Out-File -filepath ("{0}\{1}.log" -f $WorkDir, $MyScriptName) -Append
 }
 
-write-log ("GithubBaseUrl: {0}" -f $GithubBaseUrl) 
-write-log ("ProjectName: {0}" -f $ProjectName) 
-write-log ("BranchName: {0}" -f $BranchName) 
+# debug
+pwd | write-log
+Get-ChildItem -Path $WorkDir | write-log
 
+$installer = Get-ChildItem -Path $WorkDir -Filter "chef-client-*"
 
-mkdir $m_home
+# debug
+$installer | write-log
 
-$url = 'https://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.7.2-1-x86.msi'
-write-log ("download: {0}" -f $url)
-$uri = New-Object System.Uri($url)
-$file = Split-Path $uri.AbsolutePath -Leaf
-$cli = New-Object System.Net.WebClient
-$cli.DownloadFile($uri, (Join-Path $m_home $file))
-
-#$url = 'https://github.com/minecraft-mall/builder/archive/master.zip'
-$url = ($GithubBaseUrl + $ProjectName + '/archive/' + $BranchName + '.zip')
-write-log ("download: {0}" -f $url)
-$uri = New-Object System.Uri($url)
-$file = Split-Path $uri.AbsolutePath -Leaf
-$cli = New-Object System.Net.WebClient
-$cli.DownloadFile($uri, (Join-Path $m_home $file))
-
-$installer = "{0}\chef-client-12.7.2-1-x86.msi" -f $m_home
-msiexec /qn /i $installer | Out-Null
-
+msiexec /qn /i $installer.FullName | Out-Null
 $env:Path += ";C:\opscode\chef\bin"
 
-cd $m_home
+Set-Location $WorkDir
 
 Configuration OpenMall
 {
@@ -48,7 +34,7 @@ Configuration OpenMall
     {
         Archive UnZip
         {
-            Path = "{0}\{1}.zip" -f $m_home, $BranchName
+            Path = "{0}\{1}.zip" -f $WorkDir, $BranchName
             Destination = "C:\"
             Ensure = "Present"
         }
