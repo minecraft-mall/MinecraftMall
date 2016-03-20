@@ -6,7 +6,7 @@ Deploys a Windows VM and Configures Minecraft Server with Forge and Dynmap Mod.
 <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fminecraft-mall%2FMinecraftMall%2Fmaster%2F101-dynmap%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
-
+  
 テンプレートの説明
 =======================
 Dynmapが組み込まれたMinecraftサーバーを展開するテンプレートです。  
@@ -38,7 +38,3 @@ Webブラウザーでマップを見ることができます
   - Minecraftマルチサーバー
   - リモートデスクトップ
   - Dynmap http://サーバー名:8123/
-
-<a href="https://github.com/minecraft-mall/MinecraftMall/tree/master/101-dynmap/">
-  <img src="https://ga-beacon.appspot.com/UA-75159043-1/github.com/minecraft-mall/MinecraftMall/tree/master/101-dynmap/?pixel"/>
-</a>
