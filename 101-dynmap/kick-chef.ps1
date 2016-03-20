@@ -1,5 +1,4 @@
 ﻿param(
-    [String] $GithubBaseUrl,
     [String] $ProjectName,
     [String] $BranchName
 )
@@ -9,9 +8,10 @@
 
 function write-log
 {
-    param( [string] $message )
+    param(
+        [string] $message
+    )
     $message | Out-File -filepath ("{0}\{1}.log" -f $WorkDir, $MyScriptName) -Append
-    Write-Output "`n" | Out-File -filepath ("{0}\{1}.log" -f $WorkDir, $MyScriptName) -Append
 }
 
 # debug
