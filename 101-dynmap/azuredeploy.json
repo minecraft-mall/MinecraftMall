@@ -51,7 +51,7 @@
     "chef-cockbook-Project": "builder",
     "chef-cockbook-Branch": "master",
     "chef-cockbook-zipdownload-Uri": "[concat('https://github.com/minecraft-mall/', variables('chef-cockbook-Project'), '/archive/', variables('chef-cockbook-Branch'), '.zip')]",
-    "kick-chef-Argument": "[concat(' -ProjectName ', variables('chef-cockbook-Project'), ' -BranchName ', variables('hef-cockbook-Branch'))]",
+    "kick-chef-Argument": "[concat(' -ProjectName ', variables('chef-cockbook-Project'), ' -BranchName ', variables('chef-cockbook-Branch'))]",
     "windowsOSVersion": "2012-R2-Datacenter",
     "imagePublisher": "MicrosoftWindowsServer",
     "imageOffer": "WindowsServer",
