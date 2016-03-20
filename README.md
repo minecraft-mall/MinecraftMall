@@ -26,7 +26,7 @@ Minecraftサーバーを構築するテンプレートです。
 1) ARMテンプレートにて、Windows仮想マシンを作成  
 2) Chef-soloにて、Minecraftサーバーに必要なコンポーネント導入・設定  
 
-Chef Guy の Cookbookは、<a href="https://github.com/minecraft-mall/builder/tree/master/cookbook/mc_server">こちら</a>ですよ
+Chef Guy の Cookbookは、<a href="https://github.com/minecraft-mall/builder/tree/master/cookbooks/mc_server">こちら</a>ですよ
 
 
 ### MinecraftMallチーム
