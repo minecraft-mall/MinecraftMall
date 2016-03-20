@@ -46,7 +46,7 @@
 
   "variables": {
     "chef-client-destribute-Uri": "https://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.7.2-1-x86.msi",
-    "arm-template-Branch": "dev",
+    "arm-template-Branch": "master",
     "arm-template-Uri": "[concat('https://raw.githubusercontent.com/minecraft-mall/MinecraftMall/', variables('arm-template-Branch'), '/101-dynmap/kick-chef.ps1')]",
     "chef-cockbook-Project": "builder",
     "chef-cockbook-Branch": "master",
