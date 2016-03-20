@@ -328,6 +328,8 @@
             "typeHandlerVersion": "1.4",
             "settings": {
               "fileUris": [
+                "https://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.7.2-1-x86.msi",
+                "https://github.com/minecraft-mall/builder/archive/master.zip",
                 "[concat('https://raw.githubusercontent.com/minecraft-mall/MinecraftMall/', variables('MinecraftMallBranch'), '/101-dynmap/kick-chef.ps1')]"
               ],
               "commandToExecute": "[concat('powershell -ExecutionPolicy Unrestricted -file kick-chef.ps1 ', variables('kick-chef-Argument'))]"

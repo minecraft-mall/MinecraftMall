@@ -4,22 +4,32 @@
     [String] $BranchName
 )
 
+# variables
 $m_home = 'C:\mall'
-mkdir C:\mall
 
-$GithubBaseUrl | Set-Content C:\mall\GithubBaseUrl.txt
-$ProjectName | Set-Content C:\mall\ProjectName.txt
-$BranchName | Set-Content C:\mall\BranchName.txt
+function write-log
+{
+    param( [string] $message )
+    $message | Out-File -filepath ("{0}\kick-chef.log" -f $m_home) -Append
+}
+
+write-log ("GithubBaseUrl: {0}" -f $GithubBaseUrl) 
+write-log ("ProjectName: {0}" -f $ProjectName) 
+write-log ("BranchName: {0}" -f $BranchName) 
+
+
+mkdir $m_home
 
 $url = 'https://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.7.2-1-x86.msi'
+write-log ("download: {0}" -f $url)
 $uri = New-Object System.Uri($url)
 $file = Split-Path $uri.AbsolutePath -Leaf
 $cli = New-Object System.Net.WebClient
 $cli.DownloadFile($uri, (Join-Path $m_home $file))
 
-
 #$url = 'https://github.com/minecraft-mall/builder/archive/master.zip'
 $url = ($GithubBaseUrl + $ProjectName + '/archive/' + $BranchName + '.zip')
+write-log ("download: {0}" -f $url)
 $uri = New-Object System.Uri($url)
 $file = Split-Path $uri.AbsolutePath -Leaf
 $cli = New-Object System.Net.WebClient
