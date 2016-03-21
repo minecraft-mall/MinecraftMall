@@ -46,10 +46,10 @@
 
   "variables": {
     "chef-client-destribute-Uri": "https://opscode-omnibus-packages.s3.amazonaws.com/windows/2012r2/i386/chef-client-12.7.2-1-x86.msi",
-    "arm-template-Branch": "master",
+    "arm-template-Branch": "dev",
     "arm-template-Uri": "[concat('https://raw.githubusercontent.com/minecraft-mall/MinecraftMall/', variables('arm-template-Branch'), '/101-dynmap/kick-chef.ps1')]",
     "chef-cockbook-Project": "builder",
-    "chef-cockbook-Branch": "master",
+    "chef-cockbook-Branch": "dev",
     "chef-cockbook-zipdownload-Uri": "[concat('https://github.com/minecraft-mall/', variables('chef-cockbook-Project'), '/archive/', variables('chef-cockbook-Branch'), '.zip')]",
     "kick-chef-Argument": "[concat(' -ProjectName ', variables('chef-cockbook-Project'), ' -BranchName ', variables('chef-cockbook-Branch'))]",
     "windowsOSVersion": "2012-R2-Datacenter",

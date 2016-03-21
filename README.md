@@ -1,12 +1,15 @@
+Dev Version
+=======================
+
 <img src="misc/logo.png"/>
 
 Minecraft Server with Forge and Dynamp Mad. <br/>
 Azure ARM template with powershell and chef-solo.
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fminecraft-mall%2FMinecraftMall%2Fmaster%2F101-dynmap%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fminecraft-mall%2FMinecraftMall%2Fdev%2F101-dynmap%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fminecraft-mall%2FMinecraftMall%2Fmaster%2F101-dynmap%2Fazuredeploy.json" target="_blank">
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fminecraft-mall%2FMinecraftMall%2Fdev%2F101-dynmap%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
@@ -26,7 +29,7 @@ Minecraftサーバーを構築するテンプレートです。
 1) ARMテンプレートにて、Windows仮想マシンを作成  
 2) Chef-soloにて、Minecraftサーバーに必要なコンポーネント導入・設定  
 
-Chef Guy の Cookbookは、<a href="https://github.com/minecraft-mall/builder/tree/master/cookbook/mc_server">こちら</a>ですよ
+Chef Guy の Cookbookは、<a href="https://github.com/minecraft-mall/builder/tree/dev/cookbook/mc_server">こちら</a>ですよ
 
 
 ### MinecraftMallチーム
